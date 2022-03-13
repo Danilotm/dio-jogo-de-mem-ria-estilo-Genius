@@ -40,7 +40,7 @@ lightColor = (element, number) => {
     setTimeout(() => {
         // Retirar uma classe no HTML
         element.classList.remove('selected');
-    });
+    }, number + 50);
 }
 
 // Comparar se o que piscou aleatorio foi o que selecionamos no jogo
@@ -90,7 +90,7 @@ let nextLevel = () => {
 
 // Função para game over
 let gameOver = () => {
-    alert(`Pontuação: ${score}\nVocÊ perdeu o jogo!\nClique em OK para iniciar um novo jogo`);
+    alert(`Pontuação: ${score}\nVocê perdeu o jogo!\nClique em OK para iniciar um novo jogo`);
     order = [];
     clickedOrder = [];
 
